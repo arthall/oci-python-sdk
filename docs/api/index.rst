@@ -13,6 +13,31 @@ Single Page Reference
 ~~~~~~~~~~~~~~~~~~~~~~
 
 
+=====================
+Announcements Service
+=====================
+
+--------
+ Client
+--------
+
+.. autoclass:: oci.announcements_service.announcement_client.AnnouncementClient
+    :members:
+    :noindex:
+
+--------
+ Models
+--------
+
+.. automodule:: oci.announcements_service.models
+    :special-members: __init__
+    :members:
+    :undoc-members:
+    :imported-members:
+    :inherited-members:
+    :noindex:
+
+
 =====
 Audit
 =====
@@ -217,6 +242,31 @@ File Storage
     :noindex:
 
 
+============
+Healthchecks
+============
+
+--------
+ Client
+--------
+
+.. autoclass:: oci.healthchecks.health_checks_client.HealthChecksClient
+    :members:
+    :noindex:
+
+--------
+ Models
+--------
+
+.. automodule:: oci.healthchecks.models
+    :special-members: __init__
+    :members:
+    :undoc-members:
+    :imported-members:
+    :inherited-members:
+    :noindex:
+
+
 ========
 Identity
 ========
@@ -355,6 +405,69 @@ Resource Search
 --------
 
 .. automodule:: oci.resource_search.models
+    :special-members: __init__
+    :members:
+    :undoc-members:
+    :imported-members:
+    :inherited-members:
+    :noindex:
+
+
+=========
+Streaming
+=========
+
+---------
+ Clients
+---------
+
+
+Stream Admin
+============
+
+.. autoclass:: oci.streaming.stream_admin_client.StreamAdminClient
+    :members:
+    :noindex:
+
+
+Stream
+======
+
+.. autoclass:: oci.streaming.stream_client.StreamClient
+    :members:
+    :noindex:
+
+
+--------
+ Models
+--------
+
+.. automodule:: oci.streaming.models
+    :special-members: __init__
+    :members:
+    :undoc-members:
+    :imported-members:
+    :inherited-members:
+    :noindex:
+
+
+====
+Waas
+====
+
+--------
+ Client
+--------
+
+.. autoclass:: oci.waas.waas_client.WaasClient
+    :members:
+    :noindex:
+
+--------
+ Models
+--------
+
+.. automodule:: oci.waas.models
     :special-members: __init__
     :members:
     :undoc-members:

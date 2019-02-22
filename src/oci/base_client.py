@@ -1,5 +1,5 @@
 # coding: utf-8
-# Copyright (c) 2016, 2018, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2016, 2019, Oracle and/or its affiliates. All rights reserved.
 
 from __future__ import absolute_import
 import json
@@ -10,6 +10,9 @@ import random
 import re
 import string
 import uuid
+# This was added to address thread safety issues with datetime.strptime
+# See https://bugs.python.org/issue7980.
+import _strptime  # noqa: F401
 from datetime import date, datetime
 from timeit import default_timer as timer
 
@@ -418,7 +421,7 @@ class BaseClient(object):
             return [self.sanitize_for_serialization(
                 sub_obj,
                 self.extract_list_item_type_from_swagger_type(declared_type) if declared_type else None,
-                field_name + '[*]')
+                field_name + '[*]' if field_name else None)
                 for sub_obj in obj]
         elif isinstance(obj, datetime):
             if not obj.tzinfo:
