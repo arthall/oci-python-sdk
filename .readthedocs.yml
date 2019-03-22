@@ -12,8 +12,8 @@ sphinx:
 python:
     version: 3.5
     install:
-    - requirements: readthedocs/requirements.txt
-    - method: pip
+        - requirements: readthedocs/requirements.txt
+        - method: pip
    
 # Just the HTML and indexing
 formats: []
