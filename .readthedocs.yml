@@ -1,14 +1,20 @@
 # Read The Docs config
-# - http://docs.readthedocs.io/en/latest/yaml-config.html
+# - https://docs.readthedocs.io/en/stable/config-file/v2.html
+
+version: 2
+
+sphinx:
+  builder: html
+  configuration: readthedocs/conf.py
+  fail_on_warning: false
 
 # python version
 python:
     version: 3.5
-    setup_py_install: true
+    install:
+    - requirements: readthedocs/requirements.txt
+    - method: pip
    
 # Just the HTML and indexing
-formats:
-    - none
+formats: []
 
-# Limit the requirements to building the docs
-requirements_file: docs/requirements.txt
