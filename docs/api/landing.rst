@@ -37,38 +37,3 @@ API Reference
 * :doc:`Upload Manager <upload_manager>`
 * :doc:`Utilities <utilities>`
 * :doc:`Waiters <waiters>`
-
-.. rubric:: Single Page Reference
-
-* :doc:`Single Page Reference <index>`
-
-.. toctree::
-    :hidden:
-    :maxdepth: 5
-
-    announcements_service
-    audit
-    container_engine
-    core
-    database
-    dns
-    email
-    file_storage
-    healthchecks
-    identity
-    key_management
-    load_balancer
-    object_storage
-    resource_search
-    streaming
-    waas
-    config
-    exceptions
-    pagination
-    request_and_response
-    retry
-    signing
-    upload_manager
-    utilities
-    waiters
-    index
