@@ -5,17 +5,17 @@ version: 2
 
 sphinx:
   builder: html
-  configuration: readthedocs/conf.py
+  configuration: docs/conf.py
   fail_on_warning: false
 
 # python version
 python:
     version: 3.5
     install:
-        - requirements: readthedocs/requirements.txt
+        - requirements: docs/requirements.txt
         - method: pip
           path: .
-   
+
 # Just the HTML and indexing
 formats: []
 
